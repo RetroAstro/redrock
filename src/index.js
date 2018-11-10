@@ -1,12 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Container from './components/container'
+import App from './components/App'
+import './stylus/index.styl'
 
-const App = () => (
-    <Container />
-)
-
-render(
-    <App />,
-  document.getElementById('root')
-)
+render(<App />, document.getElementById('root'))
