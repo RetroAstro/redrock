@@ -66,7 +66,7 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
     },
   ];
   if (preProcessor) {
-    loaders.push(require.resolve(preProcessor));
+    loaders.push(preProcessor);
   }
   return loaders;
 };
@@ -176,21 +176,21 @@ module.exports = {
 
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
-      {
-        test: /\.(js|mjs|jsx)$/,
-        enforce: 'pre',
-        use: [
-          {
-            options: {
-              formatter: require.resolve('react-dev-utils/eslintFormatter'),
-              eslintPath: require.resolve('eslint'),
+      // {
+      //   test: /\.(js|mjs|jsx)$/,
+      //   enforce: 'pre',
+      //   use: [
+      //     {
+      //       options: {
+      //         formatter: require.resolve('react-dev-utils/eslintFormatter'),
+      //         eslintPath: require.resolve('eslint'),
               
-            },
-            loader: require.resolve('eslint-loader'),
-          },
-        ],
-        include: paths.appSrc,
-      },
+      //       },
+      //       loader: require.resolve('eslint-loader'),
+      //     },
+      //   ],
+      //   include: paths.appSrc,
+      // },
       {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall
@@ -294,7 +294,14 @@ module.exports = {
           // extensions .module.scss or .module.sass
           {
             test: stylusRegex,
-            use: getStyleLoaders({ importLoaders: 2 }, 'stylus-loader'),
+            use: getStyleLoaders({ importLoaders: 2 }, {
+              loader: require.resolve('stylus-loader'),
+              options: {
+                import: [
+                  path.join(__dirname, "../src/stylus/convert.styl")
+                ]
+              }
+            }),
           },
           // Adds support for CSS Modules, but using SASS
           // using the extension .module.scss or .module.sass

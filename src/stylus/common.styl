@@ -1,0 +1,73 @@
+.box-shadow {
+    box-shadow 0 2px 10px 0 #e3e7f6
+}
+
+.shadow-box {
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background-color rgba(0,0,0,.3)
+    z-index 200
+    display flex
+    justify-content center
+    align-items center
+}
+
+.ellipsis {
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+}
+
+// html { 
+//     background url('bg.png') no-repeat center center fixed 
+//     -webkit-background-size cover
+//     -moz-background-size cover
+//     -o-background-size cover
+//     background-size cover
+// }
+
+.flex-between {
+    display flex
+    align-items center
+    justify-content space-between
+}
+
+.flex-around {
+    display flex
+    align-items center
+    justify-content space-around
+}
+
+.flex-center {
+    display flex
+    align-items center
+    justify-content center
+}
+
+.flex-col-between {
+    display flex
+    flex-direction column
+    justify-content space-between
+}
+
+.translate-center {
+    position absolute
+    left 50%
+    top 50%
+    transform translate(-50%, -50%)
+}
+
+.bg-cover {
+    background-size cover
+    background-repeat no-repeat
+    background-position center center
+}
+
+.bg-cover-all {
+    background-size 100% 100%
+    background-repeat no-repeat
+    background-position center center
+}
