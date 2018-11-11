@@ -1,27 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const List = (props) => {
+const List = props => {
   const data = props.data
-  const listItems = data.map((item, index) =>
+  const listItems = data.map((item, index) => (
     <li key={index} className="sec flex-col-between">
-      <div className="sec-top">
-        {item.title}
-      </div>
+      <div className="sec-top">{item.title}</div>
       <div className="sec-bottom">
-        {item.content.map((item, index) =>
+        {item.content.map((item, index) => (
           <div className="sec-bottom-box flex-center" key={index}>
-            <a href={item.link}>
-              {item.name}
-            </a>
+            <a href={item.link}>{item.name}</a>
           </div>
-        )}
+        ))}
       </div>
     </li>
-  )
-  return (
-    <ul className="flex-col-between">{listItems}</ul>
-  )
+  ))
+  return <ul className="flex-col-between">{listItems}</ul>
 }
 
 List.propTypes = {
