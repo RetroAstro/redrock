@@ -9,7 +9,9 @@ const List = props => {
       <div className="sec-bottom">
         {item.content.map((item, index) => (
           <div className="sec-bottom-box flex-center" key={index}>
-            <a href={item.link}>{item.name}</a>
+            <a href={item.link} onClick={e => e.preventDefault()}>
+              {item.name}
+            </a>
           </div>
         ))}
       </div>

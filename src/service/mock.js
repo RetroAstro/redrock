@@ -1,4 +1,4 @@
-const data = [
+const dataOne = [
   {
     title: '思想政治教育网',
     content: [
@@ -78,4 +78,39 @@ const data = [
   }
 ]
 
-export default data
+const dataTwo = [
+  {
+    name: '学习十九大',
+    link: ''
+  },
+  {
+    name: '学校主页',
+    link: ''
+  },
+  {
+    name: '红岩网校工作站',
+    link: ''
+  },
+  {
+    name: '校领导接待室',
+    link: ''
+  },
+  {
+    name: '学工在线',
+    link: ''
+  },
+  {
+    name: '素质教育网',
+    link: ''
+  },
+  {
+    name: '网址大全',
+    link: ''
+  },
+  {
+    name: '掌邮官网',
+    link: ''
+  }
+]
+
+export { dataOne, dataTwo }

@@ -1,15 +1,86 @@
-.slider {
+.block {
     width 100%
-    height rem(30)
-    .arrow {
-        width rem(25)
-        height rem(25)
+    height rem(280)
+    transition all .4s ease-in-out
+    background #fff
+    z-index 200
+    position fixed
+    left 0 
+    bottom rem(-240)
+    &.up {
+        transform translateY(rem(-240))
+    }
+    & .arrow {
+        position absolute
+        top rem(3)
+        left 50%
+        transform translateX(-50%)
+        width rem(28)
+        height rem(28)
         background-image url('../../assets/arrow.png')
+        z-index 201
+    }
+    & .block-wrap {
+        opacity 0
+    }
+    & .block-header {
+        width 100%
+        height rem(40)
+        position relative
+        & .title {
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            font-size rem(16)
+            font-weight bold
+            color #ff555b
+            letter-spacing 2px
+        }
+        & .close {
+            position absolute 
+            top 50%
+            transform translateY(-50%)
+            right rem(8)
+            width rem(24)
+            height rem(24)
+            background-image url('../../assets/close.png')
+        }
+    }
+    & .block-main {
+        width 100%
+        position relative
+        padding-top rem(10)
+        & > ul {
+            width 75%
+            margin auto
+            display grid
+            grid-template-columns repeat(2, 1fr)
+            grid-template-rows repeat(4, rem(35))
+            grid-row-gap rem(16)
+            grid-column-gap rem(30)
+            & > li {
+                border-radius rem(5)
+                border 1px solid #ff555b
+                & > a {
+                    font-size rem(13.5)
+                    letter-spacing 1px
+                    color #ff555b
+                    text-decoration none
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-height: 800px) { 
-    .slider {
-        height rem(40)
+.shadow-box {
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    &.show {
+        background rgba(0,0,0,.3)
+        z-index 189
     }
 }

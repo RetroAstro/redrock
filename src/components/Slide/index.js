@@ -1,10 +1,7 @@
 import React from 'react'
+import Block from './Block'
 import './slide.styl'
 
-const Slide = () => (
-  <div className="slider flex-center">
-    <div className="arrow bg-cover-all" />
-  </div>
-)
+const Slide = () => <Block />
 
 export default Slide

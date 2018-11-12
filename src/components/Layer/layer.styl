@@ -1,26 +1,26 @@
 .layer {
     width 100%
-    overflow hidden
-    background #f1f1f1
+    position relative
+    z-index 188
+    margin-bottom rem(20)
     .bg-redrock {
         width 100%
-        height rem(256)
+        height rem(193)
         background-image url('../../assets/redrock.png')
     }
     .main {
         width 100%
-        height rem(380)
         position relative
         & > ul {
             width 92%
             transform translateY(rem(-28))
-            height rem(408)
+            height rem(453)
             margin auto
             position relative
             padding-bottom rem(13)
             & .sec {
                 width 100%
-                height rem(70)
+                height rem(75)
                 border-radius rem(6)
                 background #fff
                 padding rem(6) rem(22)
@@ -28,7 +28,7 @@
                 & .sec-top {
                     flex 4
                     text-align left 
-                    font-size rem(14)
+                    font-size rem(15)
                     font-weight bold
                     color #ff555b
                     display flex
@@ -50,6 +50,7 @@
                             font-size rem(13.5)
                             letter-spacing 1px
                             color #ff555b
+                            text-decoration none
                         }
                     }
                     & > div:last-child {
