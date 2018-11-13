@@ -8,11 +8,7 @@ const List = props => {
       <div className="sec-top">{item.title}</div>
       <div className="sec-bottom">
         {item.content.map((item, index) => (
-          <div
-            className="sec-bottom-box flex-center"
-            key={index}
-            onClick={() => (window.location.href = item.link)}
-          >
+          <div className="sec-bottom-box flex-center" key={index}>
             <a href={item.link}>{item.name}</a>
           </div>
         ))}
