@@ -4,15 +4,15 @@ const dataOne = [
     content: [
       {
         name: '重邮先锋',
-        link: ''
+        link: 'http://lxyz.cqupt.edu.cn/'
       },
       {
         name: '思政之窗',
-        link: ''
+        link: 'http://222.177.140.105/default.jsp'
       },
       {
         name: '团建在线',
-        link: ''
+        link: 'http://tuanwei.cqupt.edu.cn/'
       }
     ]
   },
@@ -21,15 +21,15 @@ const dataOne = [
     content: [
       {
         name: 'E彩鎏光',
-        link: ''
+        link: 'http://cmys.cqupt.edu.cn/zpzs.htm'
       },
       {
         name: '锦瑟南山',
-        link: ''
+        link: 'http://172.20.2.22:8080/'
       },
       {
         name: '科技创新',
-        link: ''
+        link: 'http://202.202.32.194/'
       }
     ]
   },
@@ -38,15 +38,15 @@ const dataOne = [
     content: [
       {
         name: '教务在线',
-        link: ''
+        link: 'http://jwzx.cqupt.edu.cn'
       },
       {
         name: '人文素质',
-        link: ''
+        link: 'http://bxf.cqupt.edu.cn/Bscore/'
       },
       {
         name: '质量工程',
-        link: ''
+        link: 'http://cc.cqupt.edu.cn/CquptCourseCenter/index.html'
       }
     ]
   },
@@ -55,11 +55,11 @@ const dataOne = [
     content: [
       {
         name: '健康人生',
-        link: ''
+        link: 'http://tyxy.cqupt.edu.cn/'
       },
       {
         name: '心理健康',
-        link: ''
+        link: 'http://202.202.43.69/XinLiweb/'
       }
     ]
   },
@@ -68,11 +68,11 @@ const dataOne = [
     content: [
       {
         name: '就业服务',
-        link: ''
+        link: 'http://job.cqupt.edu.cn/portal/home.html'
       },
       {
         name: '职业规划',
-        link: ''
+        link: 'https://cqupt.ncss.org.cn/jixun'
       }
     ]
   }
@@ -81,35 +81,35 @@ const dataOne = [
 const dataTwo = [
   {
     name: '学习十九大',
-    link: ''
+    link: 'http://redrock.cqupt.edu.cn/sjd/?tdsourcetag=s_pcqq_aiomsg'
   },
   {
     name: '学校主页',
-    link: ''
+    link: 'http://www.cqupt.edu.cn/cqupt/index.shtml'
   },
   {
     name: '红岩网校工作站',
-    link: ''
+    link: 'http://hongyan.cqupt.edu.cn/aboutus/'
   },
   {
     name: '校领导接待室',
-    link: ''
+    link: 'http://hongyan.cqupt.edu.cn/chat/'
   },
   {
     name: '学工在线',
-    link: ''
+    link: 'http://222.177.140.105/index.shtml'
   },
   {
     name: '素质教育网',
-    link: ''
+    link: 'http://bxf.cqupt.edu.cn/Bscore/'
   },
   {
     name: '网址大全',
-    link: ''
+    link: 'http://hongyan.cqupt.edu.cn/web/'
   },
   {
     name: '掌邮官网',
-    link: ''
+    link: 'http://hongyan.cqupt.edu.cn/app/'
   }
 ]
 

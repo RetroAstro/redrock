@@ -5,9 +5,7 @@ const Ul = props => {
   const data = props.data
   const listItems = data.map((item, index) => (
     <li key={index} className="flex-center">
-      <a href={item.link} onClick={e => e.preventDefault()}>
-        {item.name}
-      </a>
+      <a href={item.link}>{item.name}</a>
     </li>
   ))
   return <ul>{listItems}</ul>
