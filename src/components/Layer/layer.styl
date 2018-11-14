@@ -14,37 +14,35 @@
         transform translateY(rem(-28))
         & > ul {
             width 92%
-            height rem(453)
             margin auto
             position relative
-            padding-bottom rem(13)
             & .sec {
                 width 100%
-                height rem(75)
-                border-radius rem(6)
+                border-radius rem(4)
                 background #fff
-                padding rem(6) rem(22)
-                padding-top rem(3)
-                animation fadeInUp 1s ease-in-out
+                padding rem(20) rem(22)
+                padding-bottom rem(22)
+                margin-bottom rem(20)
+                opacity 0
+                animation fadeInUp 1s ease-in-out .5s forwards
                 & .sec-top {
-                    flex 4
                     text-align left 
-                    font-size rem(15)
-                    font-weight bold
+                    font-size rem(16)
+                    // font-weight bold
                     color #ff555b
                     display flex
                     align-items center
                     letter-spacing rem(2)
+                    margin-bottom rem(15)
                 }
                 & .sec-bottom {
-                    flex 6
                     display flex
                     align-items center
                     justify-content flex-start
                     & .sec-bottom-box {
                         width rem(78)
                         height rem(30)
-                        border-radius rem(6)
+                        border-radius rem(4)
                         border 1px solid #ff555b
                         margin-right rem(33.5)
                         & > a {
@@ -58,6 +56,9 @@
                         margin-right 0
                     }
                 }
+            }
+            & > li:last-child {
+                margin-bottom rem(15)
             }
         }
     }
