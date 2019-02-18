@@ -1,6 +1,6 @@
 ### Redrock
 
-```js
+```
 $ git clone https://github.com/RetroAstro/redrock.git
 
 $ cd ./redrock
